@@ -53,7 +53,10 @@
         print_r($strToArr) ;
         #Ex11
         $char="a";
-        $next_char=++$char;
+        if($char==="z"){
+            $next_char="a";
+        }else $next_char=++$char;
+       
         echo "<h2>$next_char</h2>" ;
         #Ex12
         $replacement="web ";
@@ -86,7 +89,7 @@
         $new_num3=str_ireplace(',',"",$num3);
         echo "<h2>$new_num3</h2>";
         #Ex20  
-        for($letter="a";$letter<="z";++$letter){
+        for($letter="a";$letter<="z";$letter++){
          echo $letter;
           if($letter==="z"){
               break;
