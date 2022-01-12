@@ -159,26 +159,27 @@
     #Ex12
     echo "<hr/>";
        $charCounter=ord("A");
-       $spaces=1;
+       $spaces=5;
         for($i=1;$i<=5;$i++){
-             for($i=5;$i>=$spaces;$i--){ 
-                echo str_repeat('&nbsp;', $i);
+            if($i==1){
+                echo str_repeat('&nbsp;',6);
+            }else{
+                 echo str_repeat('&nbsp;', $spaces);
             }
-        for($char="A";ord($char)<$charCounter;$char++){
+           
+        for($char="A";ord($char)<=$charCounter;$char++){
             echo str_repeat('&nbsp;', 2);
             echo $char." ";
         }
        $charCounter++;
-       $spaces++;
+       $spaces--;
        echo "<br/>";
        
        if($i==5){
         $charCounter=ord("E");
          $spaces=1;
            for($i=1;$i<=5;$i++){
-            for($i=1;$i<=$spaces;$i++){ 
-               echo str_repeat('&nbsp;', $i);
-           }
+        echo str_repeat('&nbsp;', $spaces);
        for($char="A";ord($char)<$charCounter;$char++){
            echo str_repeat('&nbsp;', 2);
            echo $char." ";
