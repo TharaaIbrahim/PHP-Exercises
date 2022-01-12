@@ -159,7 +159,7 @@
     #Ex12
     echo "<hr/>";
        $charCounter=ord("A");
-       $spaces=2;
+       $spaces=1;
         for($i=1;$i<=5;$i++){
              for($i=5;$i>=$spaces;$i--){ 
                 echo str_repeat('&nbsp;', $i);
@@ -187,7 +187,6 @@
        $spaces++;
        echo "<br/>";
        }
-       
     }
 }
 
